@@ -10,6 +10,9 @@ function typeNextCharacter() {
 
   if (index < originalText.length) {
     setTimeout(typeNextCharacter, 40);
+  } else {
+    const linkContainer = document.getElementById('link-container');
+    linkContainer.classList.add('visible');
   }
 }
 

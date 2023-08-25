@@ -7,6 +7,12 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: black;
+  color: white;
+  font-family: 'Space Mono', 'ABeeZee', monospace;
+}
+
+#fetch-container {
+  position: relative;
 }
 
 #fetch {
@@ -14,10 +20,34 @@ body {
   overflow: hidden;
   border: 1px solid white;
   background-color: black;
-  color: white;
-  font-family: 'Space Mono', 'ABeeZee', monospace;
   font-size: 16px;
   padding: 20px;
   line-height: 1.4;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+#link-container {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  transition: opacity 1s ease-in-out;
+}
+
+#link-container.visible {
+  opacity: 1;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+  transition-delay: 0.2s ease-in-out;
 }
