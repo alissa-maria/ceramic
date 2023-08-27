@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #fff;
+    /* font-family: 'Space Mono', Arial, sans-serif; */
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.block {
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    width: calc(25% - 20px);
+}
+
+.block:hover {
+    opacity: 1;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    /* font-family: 'Space Mono', Arial, sans-serif; */
+    font-family: Arial, sans-serif;
+}
