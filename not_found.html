@@ -17,18 +17,6 @@
     </div>
     <audio id="audio" src="/audio/rain.mp3"></audio>
     <script src="/js/audio.js"></script>
-    <script>
-        const imageContainer = document.querySelector('.image-container');
-        const imageCaption = document.querySelector('.image-caption');
-
-        imageContainer.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX - imageContainer.getBoundingClientRect().left;
-            const mouseY = e.clientY - imageContainer.getBoundingClientRect().top;
-
-            imageCaption.style.left = `${mouseX}px`;
-            imageCaption.style.top = `${mouseY}px`;
-        });
-    </script>
 </body>
 
 </html>
