@@ -11,8 +11,8 @@ body {
 }
 
 main {
-    max-width: 40rem;
-    padding: 3em 0;
+    max-width: 42rem;
+    padding: 3em 1em;
 }
 
 article {
@@ -44,6 +44,7 @@ p,
     max-width: 128px;
     float: left;
     margin: 0 20px 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Clear the float after each article to prevent layout issues */
