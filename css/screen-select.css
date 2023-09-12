@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inconsolata:wght@400;500;600&display=swap');
 
 body {
     margin: 0;
@@ -22,8 +22,7 @@ body {
 
 .title {
     color: #fff;
-    /* font-family: 'Space Mono', Arial, sans-serif; */
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .title-container {
@@ -59,6 +58,5 @@ body {
     text-align: center;
     margin-top: 10px;
     color: #fff;
-    /* font-family: 'Space Mono', Arial, sans-serif; */
-    font-family: Arial, sans-serif;
+    font-family: 'Inconsolata', Arial, sans-serif;
 }
