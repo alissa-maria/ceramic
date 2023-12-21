@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const articles = document.querySelectorAll("article");
   articles.forEach((article) => {
+    // Looks for (span) elements with footnote class
     const footnotes = article.querySelectorAll(".footnote");
+    // Creates a separator if there are footnotes present
     if (footnotes.length > 0) {
       const hrElement = document.createElement("hr");
       article.appendChild(hrElement);
     }
     footnotes.forEach((footnote, index) => {
-      // Generate and set the footnote number
+      // Generates and sets the footnote number
       const footnoteNumber = index + 1;
       footnote.innerHTML = `<sup>${footnoteNumber}</sup>`;
-
-      // Create the footnote content and append it to the end of the article
+      // Creates the footnote content and appends it to the end of the article
       const footnoteContent = footnote.getAttribute("data-content");
       const footnoteElement = document.createElement("div");
       footnoteElement.classList.add("footnote-content");
